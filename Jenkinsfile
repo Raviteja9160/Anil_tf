@@ -8,9 +8,6 @@ pipeline {
         TF_VAR_security_group_id = "sg-0123456789abcdef"
         TF_VAR_s3_bucket_name = "my-bucket"
         TF_VAR_iam_role_name = "my-role"
-    }
-    
-    environment {
         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
