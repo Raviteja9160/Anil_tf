@@ -17,13 +17,8 @@ pipeline {
 
     stages {
         stage('checkout') {
-            steps {
-                 script{
-                        dir("terraform")
-                        {
-                            git "https://github.com/Raviteja9160/Anil_tf.git"
-                        }
-                    }
+                steps {
+                    checkout scm
                 }
             }
 
